@@ -14,4 +14,4 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Save the trained model
-joblib.dump(model, 'models/price_predictor.joblib')
+joblib.dump(model, './models/price_predictor.joblib')
