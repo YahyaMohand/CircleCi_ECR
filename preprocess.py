@@ -7,6 +7,8 @@ df = pd.read_csv('./data/product_sample.csv')
 # Drop missing values
 df = df.dropna()
 df = df.drop('weekday', axis=1)
+df['date'] = pd.to_datetime(df['selling_date'])
+
 
 # Standardize numerical features
 scaler = StandardScaler()
